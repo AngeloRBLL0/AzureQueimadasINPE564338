@@ -17,3 +17,6 @@ CREATE OR REPLACE VIEW vw_focos_recentes AS
 SELECT id, lat, lon, municipio, estado, bioma, satelite, data_hora, coletado_em
 FROM focos_queimadas
 WHERE coletado_em >= NOW() - INTERVAL 24 HOUR;
+
+
+     
