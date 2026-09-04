@@ -77,3 +77,5 @@ jobs:
         with:
           app-name: func-queimadas-564338
           package: function
+
+ 
