@@ -84,5 +84,10 @@ jobs:
           echo "Aguardando 60 segundos para a Function App iniciar..."
           sleep 60
           az functionapp function list --name func-queimadas-rm564338 --resource-group rg-monitor-queimadas-rm564338 -o table
+
+
+
+
+
       
    
