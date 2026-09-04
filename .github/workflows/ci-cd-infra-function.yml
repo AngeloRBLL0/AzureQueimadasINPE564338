@@ -78,14 +78,12 @@ jobs:
           app-name: func-queimadas-564338
           package: function
           
-      - name: Restart Function App e Validar
-        run: |
-          az functionapp restart --name func-queimadas-rm564338 --resource-group rg-monitor-queimadas-rm564338
+       - name: Restart Function App e Validar
+          run: |
+          az functionapp restart --name func-queimadas-564338 --resource-group rg-monitor-queimadas
           echo "Aguardando 60 segundos para a Function App iniciar..."
           sleep 60
-          az functionapp function list --name func-queimadas-rm564338 --resource-group rg-monitor-queimadas-rm564338 -o table
-
-
+          az functionapp function list --name func-queimadas-564338 --resource-group rg-monitor-queimadas -o table
 
 
 
