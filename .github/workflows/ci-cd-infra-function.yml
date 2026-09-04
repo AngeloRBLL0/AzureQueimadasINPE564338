@@ -60,19 +60,6 @@ jobs:
           terraform init
           terraform apply -auto-approve
       
-      #- name: Wait for Function App to be available
-        #run: |
-          #echo "Aguardando a Function App ficar disponível..."
-          #for i in $(seq 1 10); do
-            #if az functionapp show --name func-queimadas-pf0807 --resource-group rg-monitor-queimadas > /dev/null 2>&1; then
-              #echo "Function App encontrada e disponível na tentativa $i."
-              #exit 0
-            #fi
-            #echo "Tentativa $i/10: recurso ainda não visível, aguardando 15s..."
-            #sleep 15
-          #done
-          #echo "Function App não ficou disponível a tempo."
-          #exit 1
 
       - name: Setup Python
         uses: actions/setup-python@v5
